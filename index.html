@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Please complete the survey below</p>
+      <form action="" id="survey-form">
+        <label for="name" id="name-label"
+          >Name<input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="name"
+            required
+        /></label>
+        <label for="email" id="email-label"
+          >Email<input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="email"
+            required
+        /></label>
+        <label for="number" id="number-label"
+          >Age<input
+            type="number"
+            id="number"
+            name="number"
+            min="18"
+            max="120"
+            placeholder="age 18-120"
+        /></label>
+        <select name="" id="dropdown">
+          <option value="radio">Male</option>
+          <option value="radio">Female</option>
+        </select>
+        <label for="yesno">
+          <input type="radio" value="1" name="yesno" id="yes" />Yes
+          <input type="radio" value="2" name="yesno" id="no" />No
+        </label>
+        <label for="colours"
+          >Favourite Colour?<input
+            type="checkbox"
+            name="colours"
+            id="red"
+            value="1"
+          />Red <input type="checkbox" name="colours" id="blue" value="2" />Blue
+        </label>
+        <label for="hobbies"
+          >What are your hobbies?<textarea
+            name="hobbies"
+            id="hobbies"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <input type="submit" id="submit"
+        /></label>
+      </form>
+    </div>
+  </body>
+</html>
